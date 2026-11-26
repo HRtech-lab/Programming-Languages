@@ -10,7 +10,7 @@ Use SQLite 3 with window functions. In the directory containing the listing:
 sqlite3 :memory: < native.sql
 ```
 
-The input lecture also needs readings.csv. Its SQLite runner imports the text rows into the readings table before executing the query.
+For lesson 06, run `python lesson.py` from that lesson’s directory. The companion creates the SQLite table and loads the included `readings.csv` before executing the query.
 
 ## Worked lectures
 

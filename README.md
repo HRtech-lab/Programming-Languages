@@ -1,6 +1,14 @@
 # Programming Languages
 
-Nine introductory courses, eight lectures each. Using the same small fixtures makes differences in types, iteration, missing values and error handling visible across languages. Each course ends with a language-specific workshop and a numerical accuracy exercise. Its full-length lecture notes include the native results, figures, exercises and a capstone.
+Study the same small problems in nine languages, with eight lessons per language. Compare how each language handles types, control flow, collections, files and numerical error. Each language also has a workshop on a distinctive feature, such as borrowing in Rust or goroutines in Go.
+
+## Try a short example
+
+The [short examples](examples/README.md) cover sliding-window means in Python and run-length encoding in C++17. From the repository root, run
+
+```sh
+python examples/rolling_mean.py
+```
 
 | Course | Native runtime | Language workshop |
 |---|---|---|
@@ -20,4 +28,4 @@ Every numbered folder contains the native source, a Python companion and an exec
 
 Install Python 3, NumPy, Matplotlib and Jupyter, then install the runtime for the language you want to use. Native scripts can also be run directly from each chapter using the command in the course index. The MATLAB course includes native .m files. Its notebook outputs were recorded in GNU Octave 10.3, and all eight scripts passed a separate numerical check in [MATLAB R2025b](https://github.com/HRtech-lab/HRtech-lab/actions/runs/45731606690).
 
-[Python dependencies](requirements.txt) · [Native runtime driver](course_runner.py) · [MIT licence](../LICENSE)
+[Python dependencies](requirements.txt) · [Native runtime driver](course_runner.py) · [MIT licence](LICENSE)
