@@ -1,0 +1,3 @@
+WITH changes(pos, x) AS (VALUES (1,3), (2,-1), (3,4), (4,-2), (5,0), (6,2))
+SELECT sum(x) OVER (ORDER BY pos ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW)
+FROM changes ORDER BY pos;

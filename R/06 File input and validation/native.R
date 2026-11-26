@@ -1,0 +1,5 @@
+d <- read.csv("readings.csv", colClasses = "character", na.strings = character())
+ok <- grepl("^[+-]?[0-9]+$", trimws(d$value))
+x <- as.integer(d$value[ok])
+stopifnot(length(x) > 0)
+cat(length(x), sum(x), min(x), max(x), sum(!ok))
